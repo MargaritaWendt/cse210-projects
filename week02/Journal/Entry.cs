@@ -8,17 +8,8 @@ public class Entry
 
     public void Display()
     {
-            
-    }
-        static void Main(string[] args)
-    {
-
-        Console.WriteLine("Please select one of the following:");
-        Console.WriteLine("1. Write ");
-        Console.WriteLine("2. Display ");
-        Console.WriteLine("3. Load ");
-        Console.WriteLine("4. Save ");
-        Console.WriteLine("5. Quit ");
-        string opcion = Console.ReadLine();
+        Console.WriteLine($"{_date} - {_prompt}");
+        Console.WriteLine(_entry);
+        Console.WriteLine();
     }
 }
