@@ -1,8 +1,5 @@
 public class Reference
 {
-    //2. Define class behaviors - Methods
-
-    // 4. 
     private string _book;
     private int _chapter;
     private int _verse;
@@ -23,8 +20,11 @@ public class Reference
         _verse = verse;
         _end = endVerse;
     }
-    public void ShowScripture()
+    public string GetReferenceText()
     {
-
+        if (_verse == _end)
+            return $"{_book} {_chapter}:{_verse}";
+        else
+            return $"{_book} {_chapter}:{_verse}-{_end}";
     }
 }

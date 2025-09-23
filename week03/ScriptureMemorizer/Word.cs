@@ -1,15 +1,31 @@
 using System.Diagnostics.Contracts;
 
-public class World
+public class Word
 {
-    // 4. Define class attributes
     private string _text;
-    private string _isHidden;
+    private bool _isHidden;
 
-    //2. Define class behaviors - Methods
-    //* hide
-    //* show
-    //* Chech if already hidden 
-    //* show word or __
+    public Word(string text)
+    {
+        _text = text;
+        _isHidden = false;
+    }
 
+    public void Hide()
+    {
+        _isHidden = true;
+    }
+
+    public bool IsHidden()
+    {
+        return _isHidden;
+    }
+
+    public string Display()
+    {
+        if (_isHidden)
+            return new string('_', _text.Length);
+        else
+            return _text;
+    }
 }
