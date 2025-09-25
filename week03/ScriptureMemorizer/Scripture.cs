@@ -6,16 +6,18 @@ public class Scripture
     private Reference _reference;
     private List<Word> _words;
 
+    //constructor
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
         _words = new List<Word>();
-        foreach (var w in text.Split(' '))
+        foreach (var w in text.Split(' ')) //
         {
             _words.Add(new Word(w));
         }
     }
 
+//Methods
     public void HideRandomWords(int count = 3)
     {
         Random rand = new Random();
