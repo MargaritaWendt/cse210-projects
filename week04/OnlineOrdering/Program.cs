@@ -19,6 +19,7 @@ class Program
         Console.WriteLine(order1.ShippingLabel());
         Console.WriteLine($"{product1.ShowProductInformation()}");
         Console.WriteLine($"{product2.ShowProductInformation()}");
+        Console.WriteLine("Shipping cost $5 for the USA and $35 for the rest of the countries");
         Console.WriteLine($"Total cost: ${order1.CalculateTotalCost():0.00}");
         Console.WriteLine();
 
@@ -42,6 +43,7 @@ class Program
         Console.WriteLine($"{product3.ShowProductInformation()}");
         Console.WriteLine($"{product4.ShowProductInformation()}");
         Console.WriteLine($"{product5.ShowProductInformation()}");
+        Console.WriteLine("Shipping cost $5 for the USA and $35 for the rest of the countries");
         Console.WriteLine($"Total cost: ${order2.CalculateTotalCost():0.00}");
     }
 }

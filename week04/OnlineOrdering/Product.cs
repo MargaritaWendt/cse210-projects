@@ -58,7 +58,7 @@ class Product
     //methods
     public string ShowProductInformation()
     {
-        return $"Producto: {SetName}, ID: {SetId}, Precio: {SetPrice}, Cantidad: {SetUnit}";
+        return $"Producto: {GetName()}, ID: {GetId()}, Precio: ${GetPrice()}, Cantidad: {GetUnit()}";
     }
 
     public double CalculateProductAndUnit()

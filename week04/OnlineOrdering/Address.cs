@@ -62,6 +62,6 @@ class Address
 
     public string ShowAddress()
     {
-        return $"{SetStreet}\n{SetCity}, {SetState}\n{SetCountry}";
+        return $"{GetStreet()}\n{GetCity()}, {GetState()}\n{GetCountry()}";
     }
 }

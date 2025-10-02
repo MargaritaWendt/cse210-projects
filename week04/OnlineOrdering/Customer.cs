@@ -41,7 +41,7 @@ class Customer
 
     public string ShowCustomer()
     {
-        return $"{GetName}\n{_address.ShowAddress()}";
+        return $"{GetName()}\n{_address.ShowAddress()}";
     }
 
 }

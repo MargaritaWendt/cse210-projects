@@ -43,7 +43,7 @@ class Order
         string label = "Packing Label:\n";
         foreach (Product p in _products)
         {
-            label += $"{p.SetName} (ID: {p.SetId})\n";
+            label += $"{p.GetName()} (ID: {p.GetId()})\n";
         }
         return label;
     }
