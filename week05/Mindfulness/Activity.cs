@@ -3,9 +3,15 @@ public class Activity
     private string _name;
     private string _description;
     private int _duration;
-    public void DisplayStartingMessage()
+
+    public Activity(string name, string description, int duration)
     {
-        return;
+        _name = name;
+        _description = description;
+    }
+    public void DisplayStartingMessage(string name, string description)
+    {
+        return ;
     }
 
     public void DisplayEndingMessage()
