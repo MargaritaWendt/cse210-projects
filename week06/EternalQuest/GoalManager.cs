@@ -1,3 +1,4 @@
+using System.IO;
 public class GoalManager
 {
     private List<Goal> _goals;
@@ -134,7 +135,7 @@ public class GoalManager
         if (index >= 0 && index < _goals.Count)
         {
             bool wasComplete = _goals[index].IsComplete();
-            
+
             _goals[index].RecordEvent();
 
             _score += _goals[index].GetPoints();
