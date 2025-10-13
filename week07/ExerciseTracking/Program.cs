@@ -4,11 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        RunningActivity run1 = new RunningActivity(new DateTime(2022, 11, 3), 30, 3.0);
+        RunningActivity run1 = new RunningActivity(new DateTime(2025, 10, 13), 30, 3.0);
 
-        CyclingActivity cycle1 = new CyclingActivity(new DateTime(2022, 11, 3), 45, 20.0);
+        CyclingActivity cycle1 = new CyclingActivity(new DateTime(2025, 10, 13), 45, 20.0);
 
-        SwimmingActivity swim1 = new SwimmingActivity(new DateTime(2022, 11, 3), 60, 40);
+        SwimmingActivity swim1 = new SwimmingActivity(new DateTime(2025, 10, 13), 60, 40);
 
         List<Activity> activities = new List<Activity>();
         activities.Add(run1);
