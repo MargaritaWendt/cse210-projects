@@ -4,7 +4,7 @@ public class RunningActivity : Activity
 {
     private double _distance;
 
-    public RunningActivity(DateTime date, int lengthMinutes, double distance) : base("Running", date, lengthMinutes)
+    public RunningActivity(DateTime date, double lengthMinutes, double distance) : base("Running", date, lengthMinutes)
     {
         _distance = distance;
     }
@@ -32,6 +32,6 @@ public class RunningActivity : Activity
 
     public override double GetPace()
     {
-        return GetLengthMinutes() / _distance;
+        return GetLengthMinutes() / GetDistance();
     }
 }

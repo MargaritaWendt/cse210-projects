@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        RunningActivity run1 = new RunningActivity(new DateTime(2025, 10, 13), 30, 3.0);
+        RunningActivity run1 = new RunningActivity(new DateTime(2025, 10, 13), 30, 3);
 
-        CyclingActivity cycle1 = new CyclingActivity(new DateTime(2025, 10, 13), 45, 20.0);
+        CyclingActivity cycle1 = new CyclingActivity(new DateTime(2025, 10, 13), 45, 20);
 
         SwimmingActivity swim1 = new SwimmingActivity(new DateTime(2025, 10, 13), 60, 40);
 

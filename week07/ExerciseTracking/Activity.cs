@@ -3,11 +3,11 @@ using System.IO.Pipes;
 public class Activity
 {
     private DateTime _date;
-    private int _lengthMinutes;
+    private double _lengthMinutes;
 
     private string _activityName;
 
-    public Activity(string name, DateTime date, int lengthMinutes)
+    public Activity(string name, DateTime date, double lengthMinutes)
     {
         _activityName = name;
         _date = date;
@@ -24,12 +24,12 @@ public class Activity
         _date = date;
     }
 
-    public int GetLengthMinutes()
+    public double GetLengthMinutes()
     {
         return _lengthMinutes;
     }
 
-    public void SetLengthMinutes(int lengthMinutes)
+    public void SetLengthMinutes(double lengthMinutes)
     {
         _lengthMinutes = lengthMinutes;
     }
@@ -52,6 +52,6 @@ public class Activity
     public string GetSummary()
     {
         return $"{_date:dd MMM yyyy} {_activityName} ({_lengthMinutes} min) - " +
-               $"Distance {GetDistance():0.0} km, Speed {GetSpeed():0.0} kph, Pace {GetPace():0.2} min per km";
+               $"Distance {GetDistance():0.0} km, Speed {GetSpeed():0.0} kph, Pace {GetPace()} min per km";
     }
 }

@@ -2,7 +2,7 @@ public class CyclingActivity: Activity
 {
     private double _speed;
 
-    public CyclingActivity(DateTime date, int lengthMinutes, double speed) : base("Cycling", date, lengthMinutes)
+    public CyclingActivity(DateTime date, double lengthMinutes, double speed) : base("Cycling", date, lengthMinutes)
     {
         _speed = speed;
     }
@@ -19,7 +19,7 @@ public class CyclingActivity: Activity
 
     public override double GetDistance()
     {
-        return (_speed * GetLengthMinutes()) / 60.0;
+        return _speed * GetLengthMinutes() / 60.0;
     }
 
     public override double GetSpeed()
@@ -29,7 +29,7 @@ public class CyclingActivity: Activity
 
     public override double GetPace()
     {
-        return 60.0 / _speed;
+        return 60.0 / GetSpeed();
     }
 
 

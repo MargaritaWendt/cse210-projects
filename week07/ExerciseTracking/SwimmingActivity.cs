@@ -1,13 +1,13 @@
 public class SwimmingActivity: Activity
 {
-    private int _laps;
+    private double _laps;
 
     public SwimmingActivity(DateTime date, int lengthMinutes, int laps) : base("Swimming", date, lengthMinutes)
     {
         _laps = laps;
     }
 
-    public int GetLaps()
+    public double GetLaps()
     {
         return _laps;
     }
@@ -19,7 +19,7 @@ public class SwimmingActivity: Activity
 
     public override double GetDistance()
     {
-        return _laps * 50.0 / 1000.0;
+        return _laps * 50.0 / 1000;
     }
 
     public override double GetSpeed()
